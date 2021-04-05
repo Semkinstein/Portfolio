@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <div class="menu">
+                    <div class="burger">
+                        <div class="line1 "></div>
+                        <div class="line2 "></div>
+                        <div class="line3 "></div>
+                    </div>
+                    <ul class="hamburger" style="display: none">
+                        <li><a href="#about">Обо мне</a></li>
+                        <li><a href="#portfolio">Портфолио</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                        <li><a href="#">В начало</a></li>
+                    </ul>
+                </div>
+
+                <ul class="nav-list">
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="#">В начало</a></li>
+                </ul>
+
+            </div>
+
+        </nav>
+        <div class="block-wide">
+            <h1 class="name container">Андрей Крапивин, <br> начинающий фронтэнд разработчик</h1>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container split">
+            <div>
+                <img src="../pics/my-photo.jpg" alt="literally me" class="pic-of-me">
+            </div>
+            <div>
+                <h2>Обо мне</h2>
+                <p>Всем привет, меня зовут Андрей и я занимаюсь веб-разработкой. 
+                    Могу сверстать вам крутой сайт с нуля, добавить туда кастомных интерактивных элементов.
+                     <br>
+                     Сделать сайт на Bootstrap или другойм фреймворке!
+                     <p>
+                         <br><b>Skills:</b> HTML, CSS, JS.
+                     </p>
+                    
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>Портфолио</h2>
+            <div class="split split-cols">
+                <div class="project">
+
+                    <a href="../Piano/src/index.html" target="_blank">
+                        <img src="../pics/piano.jpg" alt="piano">
+                        <span>Виртуальное пианино</span>
+                    </a>
+                    <button data-modal-target="#piano" class="open-window">i</button>
+                    <div class="window" id="piano">
+                        <h2>Виртуальное пианино</h2>
+                        <p>Замечательный музыкальный элемент! <br>
+                        Издает звуки при нажатии на кнопки клавиатуры и по клику тоже.
+                        Мой первый интерактивный элемент на JavaScript, полностью адаптивный можно встроить куда угодно.
+                        </p>
+                        <button data-close-button class="close-button">Закрыть</button>
+                    </div>
+                </div>
+                <div class="project">
+                    <button class="open-window">i</button>
+                    <a href="../UE/index.html" target="_blank">
+                        <img src="../pics/uber_eats.jpg" alt="uber_eats">
+                        <span>Uber Eats</span>
+                    </a>
+                    <button data-modal-target="#uber-eats" class="open-window">i</button>
+                    <div class="window" id="uber-eats">
+                        <h2>Uber Eats</h2>
+                        <p>Макет сайта агрегатора ресторанов<br>
+                            Финальный проект курса по верстке на Stepik. Содержит главную страницу и страницу ресторана. 
+                            Обе стрницы адаптированы под мобильные устройства и широкие экраны.
+                        </p>
+                        <button data-close-button class="close-button">Закрыть</button>
+                    </div>
+                </div>
+                <div class="project">
+                    <button class="open-window">i</button>
+                    <a href="../Bootstrapslav/index.html" target="_blank">
+                        <img src="../pics/bootstrap.jpg" alt="bootstrap">
+                        <span>Bootstrap</span>
+                    </a>
+                    <button data-modal-target="#bootstrap" class="open-window">i</button>
+                    <div class="window" id="bootstrap">
+                        <h2>Bootstrap</h2>
+                        <p>
+                            Небольшая практика по бутстрапу, которую я проходил на Stepik.
+                        </p>
+                        <button data-close-button class="close-button">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="container">
+        <h2>Контакты</h2>
+        <span>Вы можете написать мне сюда:</span>
+        <div class="icon-row">
+            <a href="mailto:nsksemko@gmail.com">
+                <img src="../pics/icons8-mail-50.png" alt="nsksemko@gmail.com">
+            </a>
+            <a href="https://github.com/Semkinstein">
+                <img src="../pics/GitHub-Mark-64px.png" alt="git">
+            </a>
+            <a href="https://vk.com/semkinstein">
+                <img src="https://raw.githubusercontent.com/VKCOM/icons/4dfd7dc449c9be90fb7cfb634a1b724048160be5/src/svg/32/logo_vk_32.svg" alt="vk">
+            </a>
+        </div>
+    </section>
+
+
+    <footer id="footer">
+        <h2>Semkinstein</h2>
+        <p>2021</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

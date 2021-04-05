@@ -1,0 +1,304 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333533;
+    line-height: 1.5em;
+    font-family:'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.container{
+    padding: 0 10px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1{
+    color: #CFDBD5;
+    font-weight: 800;
+    font-size: 2em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+header{
+    background: url("../pics/header_pic.jpg") center no-repeat;
+    background-size: cover;
+    
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    background-color: #242423;
+    z-index: 10;
+    width: 100%;
+    box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.5);
+    
+}
+
+.block-wide{
+    margin-top: 56px;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    transition: all 0.5s ease-in;
+}
+
+.block-wide:hover{
+    backdrop-filter: brightness(120%);
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    padding: 16px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.burger{
+    z-index: 20;
+    height: 24px;
+    width: 24px;
+    /*
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+     */
+}
+
+.burger div{
+    margin-top: 4px;
+    border: 1px solid white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.animated .line1 {
+    transform: translate(0px, 6px) rotateZ(45deg) ;
+}
+.animated .line2 {
+    transform: rotateX(90deg);
+}
+.animated .line3 {
+    transform: translate(0px, -6px) rotateZ(-45deg);
+}
+
+.hamburger{
+    z-index: 15;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #333533;
+    width: 9em;
+    padding: 3em 1em 1em;
+    font-weight: 600;
+    list-style: none;
+}
+
+
+.hamburger * + li{
+    padding-top: 1em;
+}
+.hamburger a{
+    color: #CFDBD5;
+}
+
+.nav-list{
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    color: cornsilk;
+    display: none;
+}
+
+.nav-list li{
+    padding: 1em 2em;
+    text-decoration: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #E8EDDF;
+}
+
+.nav-list li:last-child{
+    background-color: #333533;
+}
+
+.split{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.split b{
+    padding: 0.5em 0.8em;
+    border-radius: 9999px;
+    background: linear-gradient(#f4a261,#e76f51);
+}
+
+.split img{
+    border-radius: 8px;
+}
+
+@media (min-width: 768px){
+    .split{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .split > *{
+        flex-basis: 45%;
+    }
+
+    .split-cols{
+        flex-wrap: wrap;
+    }
+
+    .split-cols > *{
+        flex-basis: 45%;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .nav-list{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.name{
+    position: absolute;
+    bottom: 20px;
+}
+
+#about{
+    padding: 60px 0; 
+    background-color: #E8EDDF;
+}
+
+#portfolio{
+    padding: 60px 0;
+    background: linear-gradient(#8ec9db, #5bafc9);
+    text-align: center;
+    
+}
+
+#portfolio span{
+    font-size: 1.5em;
+}
+
+#portfolio a{
+    text-decoration: none;
+}
+
+.project{
+    margin-top: 50px;
+    transition: all 0.3s ease-in;
+    position: relative;
+}
+
+.project:hover{
+    transform: scale(1.05, 1.05);
+}
+
+.open-window{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    background-color: #242423;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    position: absolute;
+    right: 15px;
+    top: -15px;
+    outline: none;
+}
+
+.window{
+    z-index: 100;
+    padding: 1em;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 45%;
+    transform: scale(0) ;
+    border: #242423 2px solid;
+    transition: 0.2s ease-in-out;
+}
+
+.window.active{
+    transform: scale(1) translateY(-50%);
+}
+
+.window button{
+    background-color: #242423;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #E8EDDF;
+    padding: 0.5em 2em;
+    border: none;
+    outline: none;
+    margin: 0.5rem 0;
+}
+
+#contacts{
+    padding: 60px 0;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contacts img{
+    width: 64px;
+    height: 64px;
+}
+
+.icon-row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.icon-row img{
+    margin: 0 0.5em;
+}
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333533;
+    padding: 1em;
+}
+
+#footer *{
+    color: #CFDBD5;
+    font-weight: 400;
+}

@@ -1,0 +1,102 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*/
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #4a4e69;
+}
+
+.container {
+    margin: 10% auto;
+    max-width: 80%;
+    width: 900px;
+    padding: 3%;
+    border-radius: 20px;
+    height: 30%;
+    position: relative;
+    background-color: #c9ada7;
+}
+
+.white-keys {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.black-keys {
+    display: flex;
+    flex-flow: row nowrap;
+
+    position: relative;
+    top: -260px;
+    z-index: 5;
+}
+
+
+
+
+.white-keys kbd {
+    background: #f2e9e4;
+    font-size: 25px;
+    width: 13%;
+    height: 250px;
+    display: flex;
+    flex-flow: column-reverse;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #4a4e69;
+    transition: all 0.1s ease-in;
+    box-shadow: 2px 5px 2px #9a8c98;
+}
+
+.white-keys kbd:active,
+.black-keys kbd:active{
+    transform: scale(1, 0.95) translateY(-6.5px);
+}
+
+.kbd-active{
+    transform: scale(0.95, 0.95) translateY(-6.5px);
+}
+
+.black-keys kbd {
+    color: white;
+    background: #22223b;
+    width: 5%;
+    height: 200px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #9a8c98;
+    transition: all 0.1s ease-in;
+}
+#W{
+    position: absolute;
+    left: 11.4%;
+}
+
+#E{
+    position: absolute;
+    left: 25.8%;
+}
+
+#T{
+    position: absolute;
+    right: 40.2%;
+}
+
+#Y{
+    position: absolute;
+    right: 25.8%;
+}
+
+#U{
+    position: absolute;
+    right: 11.4%;
+}
+
+.volume{
+    margin: 20px 0;
+    font-weight: 600;
+}
